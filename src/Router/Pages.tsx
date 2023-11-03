@@ -1,13 +1,13 @@
 // import NotFound from "../NotFound/NotFound";
 
 import NotFound from "../Page/NotFound/NotFound";
-import WordList from "../Page/WordList/WordList";
+import TodoList from "../Page/TodoList/TodoList";
 import { RouteType } from "../Types/Route/Route";
 
 const routes: RouteType[] = [
 	{
 		path: "/",
-		component: WordList,
+		component: TodoList,
 	},
 	{
 		path: "/*",
