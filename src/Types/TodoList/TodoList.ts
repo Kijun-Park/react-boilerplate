@@ -20,7 +20,7 @@ export interface TodoListItemType {
 export interface TodoListPropType {
   todoList: TodoListType[];
   theme: {
-    theme: string;
+    theme: boolean;
     handleThemeChange: () => void;
   };
 }

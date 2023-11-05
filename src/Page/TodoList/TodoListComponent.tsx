@@ -121,15 +121,15 @@ const TodoListComponent = ({ props }: { props: TodoListPropType }) => {
       </div>
       <div className="footer">
         <div className="theme_btn" onClick={theme.handleThemeChange}>
-          {theme.theme === "light" ? (
-            <img
-              src={`https://github.com/Kijun-Park/react-boilerplate/assets/35815788/3bf2ff46-2657-415c-94a1-97c600c82e79`}
-              alt={`to_dark_mode`}
-            />
-          ) : (
+          {theme.theme ? (
             <img
               src={`https://github.com/Kijun-Park/react-boilerplate/assets/35815788/3528137c-928b-420d-bca0-f456c7e226c3`}
               alt={`to_light_mode`}
+            />
+          ) : (
+            <img
+              src={`https://github.com/Kijun-Park/react-boilerplate/assets/35815788/3bf2ff46-2657-415c-94a1-97c600c82e79`}
+              alt={`to_dark_mode`}
             />
           )}
         </div>
