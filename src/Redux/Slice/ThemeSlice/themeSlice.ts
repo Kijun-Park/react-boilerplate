@@ -8,7 +8,7 @@ const initialState: ThemeState = {
   value: "light",
 };
 
-export const counterSlice = createSlice({
+export const themeSlice = createSlice({
   name: "theme",
   initialState,
   reducers: {
@@ -26,6 +26,6 @@ export const counterSlice = createSlice({
 });
 
 // Action creators are generated for each case reducer function
-export const { light, dark } = counterSlice.actions;
+export const { light, dark } = themeSlice.actions;
 
-export default counterSlice.reducer;
+export default themeSlice.reducer;
