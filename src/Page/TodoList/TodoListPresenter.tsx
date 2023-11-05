@@ -26,6 +26,3 @@ const TodoListPresenter = () => {
 };
 
 export default TodoListPresenter;
-function dispatch(arg0: { payload: undefined; type: "theme/dark" }) {
-  throw new Error("Function not implemented.");
-}
