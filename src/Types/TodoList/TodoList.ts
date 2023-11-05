@@ -1,5 +1,3 @@
-import TodoListComponent from "../../Page/TodoList/TodoListComponent";
-
 export interface TodoListType {
   id: string;
   title: string;
