@@ -1,5 +1,7 @@
 import Router from "./Router/Router";
 
+import "./Font.css";
+
 import { ThemeProvider } from "styled-components";
 import { GlobalStyle } from "./global-style";
 import lightTheme from "./styles/lightTheme";

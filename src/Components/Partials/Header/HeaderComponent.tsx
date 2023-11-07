@@ -1,23 +1,29 @@
+import { Box } from "../../../Atoms/Box";
+import { Img } from "../../../Atoms/Img";
+import { Text } from "../../../Atoms/Text";
 import { headerPropType } from "../../../Types/Partials/Header";
+import { Header } from "./style";
 
 const HeaderComponent = ({ props }: { props: headerPropType }) => {
   const weather = props.weather;
   return (
-    <div className="header">
-      <div className="user_name">
-        <span>Welcome, {props.userName}</span>
-      </div>
-      <div className="title">
-        <span>Todo List</span>
-      </div>
-      <div className="weather">
-        <img src={weather.img.src} alt={weather.img.alt} />
-        <span>
+    <Header>
+      <Box width="33%" justifyContent="flex-start">
+        <Text size="lg">Welcome, {props.userName}</Text>
+      </Box>
+      <Box width="33%">
+        <Text size="lg">Todo List</Text>
+      </Box>
+      <Box width="33%" justifyContent="flex-end">
+        <Box width="60px" height="50px">
+          <Img src={weather.img.src} alt={weather.img.alt} />
+        </Box>
+        <Text size="lg">
           {weather.temperature}
           {weather.isCelsius ? "°C" : "°F"}
-        </span>
-      </div>
-    </div>
+        </Text>
+      </Box>
+    </Header>
   );
 };
 

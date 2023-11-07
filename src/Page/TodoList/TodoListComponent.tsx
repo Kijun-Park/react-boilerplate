@@ -7,26 +7,6 @@ const TodoListComponent = ({ props }: { props: TodoListPropType }) => {
 
   return (
     <div className="todolist">
-      {/* header */}
-      <div className="header">
-        <div className="user_name">
-          <span>Welcome, {`Kijun Park`}</span>
-        </div>
-        <div className="title">
-          <span>Todo List</span>
-        </div>
-        <div className="weather">
-          <img
-            src={"https://github.com/Kijun-Park/react-boilerplate/assets/35815788/3bf2ff46-2657-415c-94a1-97c600c82e79"}
-            alt={`sunny`}
-          />
-          <span>
-            {`24`}
-            {`°C`}
-          </span>
-        </div>
-      </div>
-
       {/* sub header */}
       <div className="sub_header">
         <div className="current_time">
