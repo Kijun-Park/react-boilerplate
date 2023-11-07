@@ -1,8 +1,8 @@
 // import NotFound from "../NotFound/NotFound";
 
-import NotFound from "../Page/NotFound";
-import TodoList from "../Page/TodoList";
-import { RouteType } from "../Types/Route/Route";
+import NotFound from "@pages/NotFound";
+import TodoList from "@pages/TodoList";
+import { RouteType } from "@type/Route/Route";
 
 const routes: RouteType[] = [
   {

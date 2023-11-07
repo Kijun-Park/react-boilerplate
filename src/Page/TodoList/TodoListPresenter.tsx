@@ -1,10 +1,9 @@
-import React from "react";
 import TodoListComponent from "./TodoListComponent";
 
 import { useSelector, useDispatch } from "react-redux";
-import { changeTheme } from "../../Redux/Slice/ThemeSlice/themeSlice";
-import { RootState } from "../../Redux/store";
-import { TodoListPropType } from "../../Types/TodoList/TodoList";
+import { changeTheme } from "@redux/Slice/ThemeSlice/themeSlice";
+import { RootState } from "@redux/store";
+import { TodoListPropType } from "@type/TodoList/TodoList";
 
 const TodoListPresenter = () => {
   const theme = useSelector((state: RootState) => state.themeReducer.value);

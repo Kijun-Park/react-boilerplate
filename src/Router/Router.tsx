@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import routes from "./Pages";
-import { RouteType } from "../Types/Route/Route";
-import Header from "../Components/Partials/Header";
-import { headerPropType } from "../Types/Partials/Header";
+import { RouteType } from "@type/Route/Route";
+import { headerPropType } from "@type/Partials/Header";
+import Header from "@components/Partials/Header";
 import { useSelector } from "react-redux";
-import { RootState } from "../Redux/store";
+import { RootState } from "@redux/store";
 
 const handleHeaderSet = () => {
   const [isCelsius, setIsCelsius] = useState(true);

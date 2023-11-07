@@ -1,49 +1,49 @@
 export interface WeatherType {
-	coord: {
-		lon: Number;
-		lat: Number;
-	};
-	weather: WeatherItemType[];
-	base: String;
-	main: {
-		temp: Number;
-		feels_like: Number;
-		temp_min: Number;
-		temp_max: Number;
-		pressure: Number;
-		humidity: Number;
-		sea_level: Number;
-		grnd_level: Number;
-	};
-	visibility: Number;
-	wind: {
-		speed: Number;
-		deg: Number;
-		gust: Number;
-	};
-	rain: {
-		"1h": Number;
-	};
-	clouds: {
-		all: Number;
-	};
-	dt: Number;
-	sys: {
-		type: Number;
-		id: Number;
-		country: String;
-		sunrise: Number;
-		sunset: Number;
-	};
-	timezone: Number;
-	id: Number;
-	name: String;
-	cod: Number;
+  coord: {
+    lon: number;
+    lat: number;
+  };
+  weather: WeatherItemType[];
+  base: string;
+  main: {
+    temp: number;
+    feels_like: number;
+    temp_min: number;
+    temp_max: number;
+    pressure: number;
+    humidity: number;
+    sea_level: number;
+    grnd_level: number;
+  };
+  visibility: number;
+  wind: {
+    speed: number;
+    deg: number;
+    gust: number;
+  };
+  rain: {
+    "1h": number;
+  };
+  clouds: {
+    all: number;
+  };
+  dt: number;
+  sys: {
+    type: number;
+    id: number;
+    country: string;
+    sunrise: number;
+    sunset: number;
+  };
+  timezone: number;
+  id: number;
+  name: string;
+  cod: number;
 }
 
 export interface WeatherItemType {
-	id: Number;
-	main: String;
-	description: String;
-	icon: String;
+  id: number;
+  main: string;
+  description: string;
+  icon: string;
 }

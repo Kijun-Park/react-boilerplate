@@ -1,7 +1,7 @@
-import { Box } from "../../../Atoms/Box";
-import { Img } from "../../../Atoms/Img";
-import { Text } from "../../../Atoms/Text";
-import { headerPropType } from "../../../Types/Partials/Header";
+import { Box } from "@atoms/Box";
+import { Img } from "@atoms/Img";
+import { Text } from "@atoms/Text";
+import { headerPropType } from "@type/Partials/Header";
 import { Header } from "./style";
 
 const HeaderComponent = ({ props }: { props: headerPropType }) => {

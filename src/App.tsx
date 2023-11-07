@@ -4,10 +4,10 @@ import "./Font.css";
 
 import { ThemeProvider } from "styled-components";
 import { GlobalStyle } from "./global-style";
-import lightTheme from "./styles/lightTheme";
-import darkTheme from "./styles/darkTheme";
+import lightTheme from "@styles/lightTheme";
+import darkTheme from "@styles/darkTheme";
 import { useSelector } from "react-redux";
-import { RootState } from "./Redux/store";
+import { RootState } from "@redux/store";
 
 const App = () => {
   const theme = useSelector((state: RootState) => state.themeReducer.value);

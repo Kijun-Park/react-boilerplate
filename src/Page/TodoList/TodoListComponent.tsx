@@ -1,5 +1,5 @@
 import React, { ChangeEvent, ReactNode } from "react";
-import { TodoListItemType, TodoListPropType, TodoListType } from "../../Types/TodoList/TodoList";
+import { TodoListItemType, TodoListPropType, TodoListType } from "@type/TodoList/TodoList";
 
 const TodoListComponent = ({ props }: { props: TodoListPropType }) => {
   const todoList: TodoListType[] = props.todoList;
